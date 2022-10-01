@@ -27,5 +27,17 @@ namespace MVVM_practice.ViewModels
             set => Set(ref _Title, value);
         }
         #endregion
+
+        #region Status
+
+        /// <summary>Статус программы</summary>
+
+        private string _Status = "Готов";
+        public string Status
+        {
+            get => _Status;
+            set => Set(ref _Status, value);
+        }
+        #endregion
     }
 }
